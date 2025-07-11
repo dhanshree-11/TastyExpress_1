@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tasty Express - Your Hunger, Our Express Mission</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('restro banner.jpg') no-repeat center center/cover;
+      height: 100vh;
+      color: white;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+    }
+
+    .navbar .icon img {
+      height: 60px;
+      width: 60px;
+    }
+
+    .nav-content {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: white;
+      font-weight: 800;
+      text-decoration: none;
+      font-size: 20px;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #f4a261;
+    }
+
+    .nav-buttons {
+      display: flex;
+      gap: 15px;
+    }
+
+    .nav-buttons button {
+      padding: 15px 25px;
+      border: none;
+      border-radius: 20px;
+      background-color: brown;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      font-weight: 700;
+      transition: background-color 0.3s;
+    }
+
+    .nav-buttons button:hover {
+      background-color: #a0522d;
+    }
+
+    .main {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    .main h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 70px;
+      font-weight: 900;
+      text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.7);
+      margin: 0;
+    }
+
+    .main p {
+      font-family: cursive;
+      font-size: 28px;
+      margin-top: 15px;
+      font-weight: 600;
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+    }
+
+    .arrival-section {
+      background-color: #f9f9f9;
+      color: #333;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      padding: 50px 30px;
+    }
+
+    .arrival-card {
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      max-width: 400px;
+      flex: 1 1 400px;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .arrival-card img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .arrival-content {
+      padding: 20px;
+    }
+
+    .arrival-content h2 {
+      color: #8B0000;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      margin-top: 0;
+    }
+
+    .arrival-content p {
+      line-height: 1.6;
+      font-size: 16px;
+      margin: 10px 0 0 0;
+    }
+
+    footer {
+      background-color: #222;
+      color: white;
+      padding: 40px 20px 20px;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    footer a {
+      color: #f4a261;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <nav class="navbar">
+      <div class="icon">
+        <img src="Screenshot 2025-05-11 135557.png" alt="Tasty Express Logo" />
+      </div>
+      <div class="nav-content">
+        <div class="nav-buttons">
+          <button>Sign In</button>
+          <button>Order Table</button>
+        </div>
+        <div class="nav-links">
+          <a href="index.html" aria-current="page">Home</a>
+          <a href="contact.html">Contact</a>
+          <a href="dinein.html">Dine In</a>
+          <a href="about.html">About</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="main">
+      <h1>Tasty Express</h1>
+      <p>Your Hunger, Our Express Mission!</p>
+    </div>
+  </div>
+
+  <section class="arrival-section">
+    <div class="arrival-card">
+      <img src="juicy-burger-with-crispy-fries-red-onions.png" alt="Blaze Crunch Burger" />
+      <div class="arrival-content">
+        <h2>🔥 New Arrival: Blaze Crunch Burger</h2>
+        <p>Juicy flame-grilled beef patty with melted cheddar & spicy pepper jack cheese, jalapeño slaw, chipotle mayo, crispy onion rings, smoky bacon on a brioche bun. Served with golden fries.</p>
+      </div>
+    </div>
+
+    <div class="arrival-card">
+      <img src="delicious-spaghetti-bolognese-with-cherry-tomatoes-basil.png" alt="Creamy Tuscan Alfredo Pasta" />
+      <div class="arrival-content">
+        <h2>🍝 New Arrival: Creamy Tuscan Alfredo Pasta</h2>
+        <p>Al dente fettuccine tossed in velvety garlic Parmesan Alfredo sauce with sun-dried tomatoes, sautéed spinach, topped with aged Romano cheese & fresh herbs.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Tasty Express. All rights reserved. | 📞 8261077665| ✉️ <a href="mailto:contact@tastyexpress.com">contact@tastyexpress.com</a></p>
+  </footer>
+</body>
+</html>
