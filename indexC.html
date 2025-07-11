@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - The Gourmet Spoon</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('https://images.unsplash.com/photo-1600891963933-96051a47d5f9?auto=format&fit=crop&w=1500&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.7);
+      min-height: 100vh;
+      padding: 3rem 1rem;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 2rem;
+      backdrop-filter: blur(10px);
+    }
+
+    h1 {
+      text-align: center;
+      color: #fff;
+      margin-bottom: 2rem;
+    }
+
+    .info {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .info div {
+      flex: 1 1 45%;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 1rem;
+      border-radius: 8px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: #fff;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border: none;
+      border-radius: 6px;
+      background: rgba(255, 255, 255, 0.9);
+      color: #000;
+    }
+
+    button {
+      padding: 0.75rem 1.5rem;
+      background: #e63946;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    button:hover {
+      background: #d62828;
+    }
+
+    .social {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .social a {
+      margin: 0 0.5rem;
+      text-decoration: none;
+      color: #f1c40f;
+    }
+
+    @media (max-width: 600px) {
+      .info div {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <div class="container">
+      <h1>Contact Us</h1>
+
+      <div class="info">
+        <div>
+          <h3>📍 Address</h3>
+          <p>The Gourmet Spoon<br>1234 Flavor Avenue<br>Foodie Town, CA 90210</p>
+        </div>
+        <div>
+          <h3>📞 Phone</h3>
+          <p>(123) 456-7890</p>
+          <p>Mon–Sun: 10:00 AM – 10:00 PM</p>
+        </div>
+        <div>
+          <h3>📧 Email</h3>
+          <p><a href="mailto:info@thegourmetspoon.com" style="color: #f1c40f;">info@thegourmetspoon.com</a></p>
+        </div>
+        <div>
+          <h3>🕒 Hours</h3>
+          <p>Mon–Fri: 11 AM – 10 PM<br>Sat–Sun: 9 AM – 11 PM<br>Brunch: 9 AM – 2 PM</p>
+        </div>
+      </div>
+
+      <form action="#" method="POST">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Phone (optional)</label>
+        <input type="tel" id="phone" name="phone" />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+
+      <div class="social">
+        <p>Follow Us:</p>
+        <a href="#">Facebook</a> |
+        <a href="#">Instagram</a> |
+        <a href="#">Twitter</a> |
+        <a href="#">TikTok</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
