@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Menu - Tasty Express</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fffaf0;
+      color: #333;
+    }
+
+    header {
+      background-color: #8B0000;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 26px;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background: url("restro banner.jpg") no-repeat center center/cover;
+      padding: 100px 20px;
+      color: white;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .menu-section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .menu-section h3 {
+      font-size: 36px;
+      color: #8B0000;
+      margin-bottom: 30px;
+    }
+
+    .menu-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .menu-item {
+      background-color: white;
+      border-radius: 15px;
+      width: 240px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .menu-item:hover {
+      transform: scale(1.05);
+    }
+
+    .menu-item img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .item-info {
+      padding: 15px;
+    }
+
+    .item-info h4 {
+      margin: 0 0 10px;
+      font-size: 18px;
+      color: #333;
+    }
+
+    .item-info p {
+      color: #666;
+      font-size: 14px;
+      margin: 0 0 10px;
+    }
+
+    .item-info span {
+      font-weight: bold;
+      color: #ff5722;
+      font-size: 16px;
+    }
+
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 36px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Tasty Express</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="indexS.html">SignIn</a>
+    <a href="indexC.html">Contact</a>
+    <a href="indexA.html">About</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Our Menu</h2>
+  <p>Explore our delicious and fresh fast-food offerings.</p>
+</section>
+
+<section class="menu-section">
+  <h3>Burgers & Wraps</h3>
+  <div class="menu-grid">
+    <div class="menu-item">
+      <img src="juicy-burger-with-crispy-fries-red-onions.png" alt="Veg Supreme Burger">
+      <div class="item-info">
+        <h4>Veg Supreme Burger</h4>
+        <p>Loaded with veggies, cheese & tangy mayo.</p>
+        <span>₹99</span>
+      </div>
+    </div>
+    <div class="menu-item">
+      <img src="Screenshot 2025-07-08 142705.png" alt="Spicy Paneer Wrap">
+      <div class="item-info">
+        <h4>Spicy Paneer Wrap</h4>
+        <p>Paneer tikka, lettuce, sauces in a wrap.</p>
+        <span>₹109</span>
+      </div>
+    </div>
+    <div class="menu-item">
+      <img src="side-view-chicken-roll-fried-chicken-strips-with-mayo-tomato-lettuce-wrapped-tortilla.jpg" alt="Grilled Chicken Wrap">
+      <div class="item-info">
+        <h4>Grilled Chicken Wrap</h4>
+        <p>Marinated chicken strips with veggies and aioli.</p>
+        <span>₹129</span>
+      </div>
+    </div>
+    <div class="menu-item">
+      <img src="still-life-delicious-american-hamburger.jpg" alt="Cheese Burst Burger">
+      <div class="item-info">
+        <h4>Cheese Burst Burger</h4>
+        <p>Stuffed with double cheese and crispy patty.</p>
+        <span>₹119</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="menu-section">
+  <h3>Fries & Sides</h3>
+  <div class="menu-grid">
+    <div class="menu-item">
+      <img src="Screenshot 2025-07-08 143219.png" alt="Masala Fries">
+      <div class="item-info">
+        <h4>Masala Fries</h4>
+        <p>Crispy fries tossed in spicy Indian masala.</p>
+        <span>₹69</span>
+      </div>
+    </div>
+    <div class="menu-item">
+      <img src="view-delicious-poutine.jpg" alt="Cheesy Fries">
+      <div class="item-info">
+        <h4>Cheesy Fries</h4>
+        <p>Golden fries drizzled with hot cheese sauce.</p>
+        <span>₹79</span>
+      </div>
+    </div>
+    <div class="menu-item">
+      <img src="freshly-grilled-beef-vegetable-taco-plate-generative-ai.jpg"Loaded Nachos">
+      <div class="item-info">
+        <h4>Loaded Nachos</h4>
+        <p>Corn chips topped with cheese, beans & salsa.</p>
+        <span>₹99</span>
+      </div>
+    </div>
+    <div class="menu-item">
+      <img src="closeup-italian-appetizer-bruschettas-with-tomato-sauce-parmesan-cheese-wooden-table-h.jpg" alt="Cheesy Garlic Bread">
+      <div class="item-info">
+        <h4>Cheesy Garlic Bread</h4>
+        <p>Toasted bread loaded with garlic butter & cheese.</p>
+        <span>₹89</span>
+      </div>
+  </div>
+</section>
+
+
+<section class="menu-section">
+  <h3>Drinks & Shakes</h3>
+  <div class="menu-grid">
+    <div class="menu-item">
+      <img src="Screenshot 2025-07-08 143053.png" alt="Chocolate Blast Shake">
+      <div class="item-info">
+        <h4>Chocolate Blast Shake</h4>
+        <p>Rich chocolate shake with brownie chunks.</p>
+        <span>₹99</span>
+      </div>
+    </div>
+    <div class="menu-item">
+      <img src="strawberry-milkshake-with-ice-table.jpg" alt="Strawberry Cream Shake">
+      <div class="item-info">
+        <h4>Strawberry Cream Shake</h4>
+        <p>Fresh strawberry puree & vanilla cream blend.</p>
+        <span>₹89</span>
+      </div>
+    </div>
+    <div class="menu-item">
+      <img src="front-view-dessert-jar-with-chocolate-biscuits-rolls.jpg" alt="Oreo Milkshake">
+      <div class="item-info">
+        <h4>Oreo Milkshake</h4>
+        <p>Blended Oreos with milk & creamy delight.</p>
+        <span>₹99</span>
+      </div>
+    </div>
+    <div class="menu-item">
+      <img src="lemonade-with-lemon-mint-ice-cubes.jpg" alt="Mint Lemonade">
+      <div class="item-info">
+        <h4>Mint Lemonade</h4>
+        <p>Refreshing lemon drink with mint leaves.</p>
+        <span>₹59</span>
+      </div>
+  </div>
+</section>
+
+<!-- Desserts -->
+<section class="menu-section">
+  <h3>Desserts</h3>
+  <div class="menu-grid">
+    <div class="menu-item">
+      <img src="Screenshot 2025-07-08 143336.png" alt="Mango Mania Sundae">
+      <div class="item-info">
+        <h4>Mango Mania Sundae</h4>
+        <p>Vanilla ice cream with fresh mango pulp.</p>
+        <span>₹89</span>
+      </div>
+    </div>
+    <div class="menu-item">
+      <img src="front-view-delicious-chocolate-cake-with-almonds.jpg" alt="Choco Fudge Brownie">
+      <div class="item-info">
+        <h4>Choco Fudge Brownie</h4>
+        <p>Warm brownie with chocolate drizzle.</p>
+        <span>₹79</span>
+      </div>
+    </div>
+    <div class="menu-item">
+      <img src="Screenshot 2025-07-08 155649.png" alt="Mini Gulab Jamun">
+      <div class="item-info">
+        <h4>Mini Gulab Jamun</h4>
+        <p>Classic Indian sweet with cardamom syrup.</p>
+        <span>₹49</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Tasty Express | 📞 8261077665 | ✉️ contact@tastyexpress.com</p>
+</footer>
+
+</body>
+</html>
